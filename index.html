@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+            flex-direction: column;
+            background: lightslategray;
+        }
+        .dots {
+            display: flex;
+            gap: 4px;
+        }
+        .dot {
+            height: 30px;
+            width: 30px;
+            background-color: orangered;
+            border-radius: 50%;
+            animation: bounce 200ms infinite ease-in-out alternate;
+        }
+
+        @keyframes bounce {
+            to {
+                transform: translateY(12px);
+            }
+        }
+
+        .dot:nth-child(2){
+            animation-delay: 100ms;
+        }
+        .dot:nth-child(3){
+            animation-delay: 200ms;
+        }
+    </style>
+</head>
+<body>
+        <div class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+
+        </div>
+</body>
+</html>
